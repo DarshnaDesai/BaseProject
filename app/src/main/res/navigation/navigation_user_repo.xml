@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_user_repo"
+    app:startDestination="@id/userRepoListFragment">
+
+    <fragment
+        android:id="@+id/userRepoListFragment"
+        android:name="com.takehomeproject.presentation.repolist.UserRepoListFragment"
+        android:label="fragment_user_repo_list"
+        tools:layout="@layout/fragment_user_repo_list">
+        <action
+            android:id="@+id/action_userRepoListFragment_to_userRepoDetailsFragment"
+            app:destination="@id/userRepoDetailsFragment">
+            <argument
+                android:name="userRepo"
+                android:defaultValue="@null"
+                app:argType="com.takehomeproject.data.model.UserRepoResponse"
+                app:nullable="true" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/userRepoDetailsFragment"
+        android:name="com.takehomeproject.presentation.repodetail.UserRepoDetailsFragment"
+        android:label="fragment_user_repo_details"
+        tools:layout="@layout/fragment_user_repo_details">
+
+        <argument
+            android:name="userRepo"
+            android:defaultValue="@null"
+            app:argType="com.takehomeproject.data.model.UserRepoResponse"
+            app:nullable="true" />
+    </fragment>
+</navigation>

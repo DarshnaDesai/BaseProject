@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".presentation.repodetail.UserRepoDetailsFragment">
+
+    <TextView
+        android:id="@+id/tv_title_label_value"
+        style="@style/LabelTextStyle"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/tv_repo_desc_label"
+        style="@style/LabelTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_label_value" />
+
+    <TextView
+        android:id="@+id/tv_repo_desc_label_value"
+        style="@style/LabelValueTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_desc_label"
+        tools:text="Hello World! How are you?" />
+
+    <TextView
+        android:id="@+id/tv_repo_updated_label"
+        style="@style/LabelTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/updated_at"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_desc_label_value" />
+
+    <TextView
+        android:id="@+id/tv_repo_updated_label_value"
+        style="@style/LabelValueTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_updated_label"
+        tools:text="2024/6/8" />
+
+    <TextView
+        android:id="@+id/tv_repo_star_gazer_count_label"
+        style="@style/LabelTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/stargazers_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_updated_label_value" />
+
+    <TextView
+        android:id="@+id/tv_repo_star_gazer_count_label_value"
+        style="@style/LabelValueTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_star_gazer_count_label"
+        tools:text="401" />
+
+    <TextView
+        android:id="@+id/tv_repo_forks_label"
+        style="@style/LabelTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fork_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_star_gazer_count_label_value" />
+
+    <TextView
+        android:id="@+id/tv_repo_forks_label_value"
+        style="@style/LabelValueTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_forks_label"
+        tools:text="40" />
+
+    <TextView
+        android:id="@+id/tv_repo_open_issue_label"
+        style="@style/LabelTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/open_issue_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_forks_label_value" />
+
+    <TextView
+        android:id="@+id/tv_repo_open_issue_label_value"
+        style="@style/LabelValueTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_open_issue_label"
+        tools:text="4" />
+
+    <TextView
+        android:id="@+id/tv_forks_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/badge_background"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:text="@string/star_badge"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_repo_open_issue_label_value"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

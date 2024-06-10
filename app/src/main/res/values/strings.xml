@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TakeHomeProject</string>
+
+    <!--User Repo List Screen-->
+    <string name="hint_user_id">Enter a github user id</string>
+    <string name="action_search">Search</string>
+    <string name="no_data">No Data Found</string>
+    <string name="content_desc_user_profile">User profile</string>
+
+    <!--User Repo Details Screen-->
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="updated_at">Updated At</string>
+    <string name="stargazers_count">Stargazers</string>
+    <string name="fork_count">Forks</string>
+    <string name="open_issue_count">Open Issues</string>
+    <string name="star_badge">Star Badge</string>
+</resources>
