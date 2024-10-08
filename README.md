@@ -1,4 +1,4 @@
-# TAKE HOME PROJECT
+# BASE PROJECT
 
 ## About
 Presented here is a demonstration application crafted with Kotlin. 
